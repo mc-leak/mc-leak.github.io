@@ -1,0 +1,38 @@
+* {
+	display: flex;
+	flex-direction: column;
+	background: #222222;
+	color: #fff;
+	justify-content: space-between;
+	align-items: center;
+	margin: 50;
+	padding:10;
+}
+
+div {
+	width: 50%;
+	justify-content: center;
+	text-align: center;
+}
+
+img {
+	width: 80%;
+	margin: 10px auto;
+}
+
+ol li {
+	counter-increment: list;
+	list-style-type: none;
+	position: relative;
+	text-align: left;
+}
+
+ol li:before {
+	color: #fff;
+	content: counter(list) ")";
+	left: -64px;
+	top: 15px;
+	position: absolute;
+	text-align: right;
+	width: 26px;
+}
